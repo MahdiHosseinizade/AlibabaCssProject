@@ -1,542 +1,540 @@
-@font-face{
-    font-family: "IranYekan";
-    src: url(../assets/fonts/iranyekanwebregular\(fanum\).woff2);
+@font-face {
+  font-family: "IranYekan";
+  src: url(../assets/fonts/iranyekanwebregular\(fanum\).woff2);
 }
-body{
-    font-family: "IranYekan";
-    background-color: rgb(245, 244, 244);
+body {
+  font-family: "IranYekan";
+  background-color: rgb(245, 244, 244);
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
-nav{
-    width: 100%;
-    background-color: white;
-    /* position: fixed; */
-    /* position: absolute; */
-    top: 0;
-    left: 0;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 30px;
+nav {
+  width: 100%;
+  background-color: white;
+  /* position: fixed; */
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+  position: fixed;
+  z-index: 2;
 }
 .main {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding: 15px 17px;
-    justify-content: center;
-    /* align-items: center; */
+  margin-top: 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 15px 17px;
+  justify-content: center;
+  max-width: 1500px;
+  margin: 88px auto;
+  /* align-items: center; */
 }
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
 nav ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 36px;
-    gap: 34px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 36px;
+  gap: 34px;
 }
-li{
-    list-style: none;
-    font-size: 1rem;
-    font-weight: 400;
-    transition: all 0.3s ease;
+li {
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.3s ease;
 }
-.hotelnamestars  {
-    text-align: right;
-    margin-right: 6%;
+.hotelnamestars {
+  text-align: right;
+  margin-right: 6%;
 }
-.hotelnamestars .hotelname{
-    font-size: 20px;
-    line-height: 48px;
+.hotelnamestars .hotelname {
+  font-size: 20px;
+  line-height: 48px;
 }
-.hoteltitle p{
-    font-size: 16px;
-    line-height: 24.8px; 
-    font-weight: 500;
-    text-align: right;
-    color:#6C7680 ;
-    margin-right: 6%;
+.hoteltitle p {
+  font-size: 16px;
+  line-height: 24.8px;
+  font-weight: 500;
+  text-align: right;
+  color: #6c7680;
+  /* margin-right: 6%; */
+}
+.flex{
+  display: flex;
 }
 
 .imageGalley {
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 315px;
+  align-items: center;
+  justify-content: center;
 }
-.rightimage{
-    width: 45%;
-    /* height: 100%; */
+.rightimage {
+  width: 45%;
+  height: 100%;
 }
-.rightimage img{
-    border-radius: 0 10px 10px 0;
-    width: 100%;
-    /* height: 100%; */
+.rightimage img {
+  border-radius: 0 10px 10px 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.leftimgs{
-    width: 45%;
-    /* height: 100%; */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 5px;
-    
+.leftimgs {
+  width: 45%;
+  height: 315px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
+  border-radius: 8px;
+  overflow: hidden;
 }
-.leftimgs div{
-    width: 48%;
-    height: 50%;
-    display: flex;
+.leftimgs div {
+  width: 49.3%;
+  height: 50%;
+  display: flex;
 }
-.leftimgs img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
+.leftimgs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border-radius: 8px 0 8px 0; */
 }
-.starsaddress{
-    text-align: right;
-    /* display: flex;
+.starsaddress {
+  text-align: right;
+  /* display: flex;
     flex-direction: row; */
-    /* align-items: center; */
-    margin-right: 6%;
-}
-@media screen and (max-width: 600px) {
-    .imageGalley {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        flex-flow: column;
-        gap: 20px;
-    }     
-    .leftimgs {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-flow: column;
-    }
-    .rightimage{
-        width: 100%;
-    }
-    .bodyImg {
-        width: 100% !important;
-    }
-    .bodyImg img {
-        width: 100%;
-    }
-    nav ul {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-}   
-
+  /* align-items: center; */
+  margin-right: 6%;
 }
 
-
-.starsaddress{
-    /* flex and right the page */
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    text-align: right;
-    position: absolute;
-    right: 1%;
-
+.starsaddress {
+  /* flex and right the page */
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  text-align: right;
+  position: absolute;
+  right: 1%;
 }
-.rate{
-    color: #17a2b8;
-    padding-right: 5px;
-    padding-left: 5px;
+.rate {
+  color: #17a2b8;
+  padding-right: 5px;
+  padding-left: 5px;
 }
-.rate .ratefirst{
-    font-size: 14px;
-    font-weight: 700;
+.rate .ratefirst {
+  font-size: 14px;
+  font-weight: 700;
 }
-.rate .ratesceond{
-    font-size: 12px;
-    font-weight: 400;
+.rate .ratesceond {
+  font-size: 12px;
+  font-weight: 400;
 }
-.address{
-    color: #2b2f33;
-    font-size: 12px;
-    /* font-weight: 400; */
+.address {
+  color: #2b2f33;
+  font-size: 12px;
+  /* font-weight: 400; */
 }
-.posibility{
-    margin-right: 6%;
-    margin-left: auto;
-    margin-top: 2%;
-    /* background-color: #5a95d0; */
-    width: 60%;
-    /* height: 100%; */
+.posibility {
+  margin-right: 6%;
+  margin-left: auto;
+  margin-top: -275px;
+  /* background-color: #5a95d0; */
+  width: 60%;
+  /* height: 100%; */
 }
-.posibility h2{
-    font-size: 16px;
-    font-weight: 700;
-    color: #2b2f33;
-    padding: 10px;
-    text-align: right;
-    /* margin-right: 6%; */
+.posibility::before{
+  content: "";
+    display: inline-block;
+    height: 250px;
+    margin: -180px 0 0;
 }
-.showposibility{
-    display: flex;
-    flex-direction: row-reverse;
-    border-radius: 10px;
-    background-color: #fff;
-    padding: 10px;
-    text-align: right;
-    color: #2b2f33;
-    font-size: 14px;
-    font-weight: 400;
+.posibility h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2b2f33;
+  padding: 10px;
+  text-align: right;
+  /* margin-right: 6%; */
 }
-.showposibility p{
-    padding: 5px;
+.showposibility {
+  display: flex;
+  flex-direction: row-reverse;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px;
+  text-align: right;
+  color: #2b2f33;
+  font-size: 14px;
+  font-weight: 400;
 }
-.showposibility .rightposition{
-    /* left to the text */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    text-align: right;
-    border-left: 1px solid grey;
-} 
+.showposibility p {
+  padding: 5px;
+}
+.showposibility .rightposition {
+  /* left to the text */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  border-left: 1px solid grey;
+}
 .showposibility .leftposition {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 5%;
 }
-.showposibility .middleposition{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+.showposibility .middleposition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-      .rooms {
-            margin-right: 6%;
-            margin-left: auto;
-            margin-top: 2%;
-            /* background-color: #5a95d0; */
-            width: 60%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: space-between;
+.rooms {
+  margin-right: 6%;
+  margin-left: auto;
+  margin-top: 2%;
+  /* background-color: #5a95d0; */
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.rooms::before{
+  content: "";
+    display: inline-block;
+    height: 250px;
+    margin: -180px 0 0;
+}
+.rooms h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2b2f33;
+  padding: 10px;
+  text-align: right;
+}
+.roomdetailandprice {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 10px;
+}
+.showdetail {
+  text-align: right;
+  width: 80%;
+  /* background-color: #0f1a24; */
+}
+.showdetail header {
+  border-bottom: 1px solid grey;
+}
 
-        }
-      .rooms h2{
-        font-size: 16px;
-        font-weight: 700;
-        color: #2b2f33;
-        padding: 10px;
-        text-align: right;
-    }
-    .roomdetailandprice{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row-reverse; 
-        padding: 10px;
-        background-color: #fff;
-        border-radius: 5px;
-        margin: 10px;
-    }
-    .showdetail{
-        text-align: right;
-        width: 80%;
-        /* background-color: #0f1a24; */
-    }
-    .showdetail header{
-        border-bottom: 1px solid grey;
-    }
-    
-    .typeofroom{
-        color: #0f697a;
-        background-color: #A0E8F3;
-        padding: 2px;
-        /* width: 60px; */
-        border-radius: 50%;
-       
-        font-size: 12px;
-    }
-    .foodandtype{
-        display: flex;
-        flex-direction: row-reverse;
-        margin-top: 10px;
-    }
-    .food{
-        font-size: 14px;
-        margin-right: 1%;
-    }
-    .numberofperson{
-        font-size: 14px;
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        font-weight: 200;
-        color: #2b2f33;
-        /* margin-right: 1%; */
-    }
-    .numberofperson i{
-        margin-left: 10px;
-    }
-    .numberpricerule{
-        display: flex;
-        flex-direction: row-reverse;
-        /* justify-content: space-between; */
-        gap: 70px;
-        align-items: center;
-        margin-top: 10px;
-    }
-    .cancelrule{
-        color: #0077db;
-        font-size: 14px;
-        font-weight: 200;
-    }
-    .showprice{
-        width: 20%;
-        border-right: 1px solid grey;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        /* background-color: #5a95d0; */
-    }
-    .pricediscount{
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 10px;
-    }
+.typeofroom {
+  color: #0f697a;
+  background-color: #a0e8f3;
+  padding: 2px;
+  /* width: 60px; */
+  border-radius: 50%;
 
-    .percent{
-        color: #1e7b33;
-        background-color: #EAFAEE;
-        border-radius: 0.625rem;
-        padding: 0 0.225rem;
-        font-weight: 400;
-        line-height: 1.67;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: .75rem;
-        
-    }
-    .pr{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+  font-size: 12px;
+}
+.foodandtype {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 10px;
+}
+.food {
+  font-size: 14px;
+  margin-right: 1%;
+}
+.numberofperson {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-weight: 200;
+  color: #2b2f33;
+  /* margin-right: 1%; */
+}
+.numberofperson i {
+  margin-left: 10px;
+}
+.numberpricerule {
+  display: flex;
+  flex-direction: row-reverse;
+  /* justify-content: space-between; */
+  gap: 70px;
+  align-items: center;
+  margin-top: 10px;
+}
+.cancelrule {
+  color: #0077db;
+  font-size: 14px;
+  font-weight: 200;
+}
+.showprice {
+  width: 20%;
+  border-right: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #5a95d0; */
+}
+.pricediscount {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
 
-        font-size: 1.125rem;
-        color: #0077db;
-    }
-    .pr span{
-        font-size: 10.8px;
-        color: #959ea6;
-        margin-right: 5px;
-    }
-    .pri{
-        position: relative;
-    }
-    .pri::after{
-        position: absolute;
-        content: '';
-        left: 0;
-        top: 50%;
-        right: 0;
-        border-top: 1px solid #959ea6;
-        border-color: inherit;
-        transform:rotate(-10deg)
-    }
-    .ReservationButton{
-        padding: 0.25rem 3rem;
-        line-height: 30px;
-        border-radius: 8px;
-        background-color: #0077DB;
-        color: white;
-        font-size: 0.875rem;
-        border: none;
-        text-align: center;
-        margin: auto;
-        display: table;
-        font-family: 'IranYekan';
-    }
-    .priceforonenight{
-        font-size: 12px;
-        font-weight: 200;
-        color: #6C7680;
-    }
-    .importantplacesaround{
-        margin-right: 6%;
-        margin-left: auto;
-        margin-top: 2%;
-        width: 60%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        /* background-color: #1e7b33; */
-    }
-    .importantplacesaround h2{
-        font-size: 16px;
-        font-weight: 700;
-        color: #2b2f33;
-        padding: 10px;
-        text-align: right;
-    }
-    .mapandzhorasik{
-        display: flex;
-        flex-direction: row-reverse;
-        /* justify-content: space-between; */
-        gap: 10px;
-    }
-    .zhorasik{
-        height: 20%;
-        width: 40%;
-        border-radius: 5px;
-        /* text-emphasis-color: #fff; */
-        background-color: #ffffff;
-    }
-    .zhorasik h3{
-        color: #fff;
-        font-size: 14px;
-        font-weight: 700;
-        padding: 10px;
-    }
-    .zhorasik p{
-        color: #000000;
-        font-size: 12px;
-        font-weight: 200;
-        padding: 10px;
-    }
-    .zhorasikdetail{
-        display: flex;
-        flex-direction: column;
-    }
-    .parkdetail{
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    .metrtime{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-    }
-    .mmd{
-        display: flex;
-    }
-    .showmap{
-        width: 60%;
-        /* background-color: #17a2b8; */
-    }
-    .showmap img{
-        width: 75%;
-        height: 300px;
-        border-radius: 5px;
-    }
-    .rules{
-        margin-right: 6%;
-        margin-left: auto;
-        margin-top: 2%;
-        width: 60%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .rules h2{
-        font-size: 16px;
-        font-weight: 700;
-        color: #2b2f33;
-        padding: 10px;
-        text-align: right;
-    }
-    .hotel-rules{
-        text-align: right;
-        padding: 10px;
-        background-color: #fff;
-        border-radius: 5px;
-        margin: 10px;
-        display: flex;
-        flex-direction: row-reverse;
-        /* width: 20%; */
-    }
-    .enterandexit{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 15%;
-        border-left: 1px solid #ccc;
-    }
-    .enter{
-        display: flex;
-        flex-direction: column;
-    }
-    .exit{
-        display: flex;
-        flex-direction: column;
-    }
-    .costandpoints{
-        width: 85%;
-        display: flex;
-        flex-direction: column;
-        margin-right: 3%;
-    }
-    .Essentialtips{
-        display: flex;
-        flex-direction: column;
-    }
-    .Additionalcost{
-        display: flex;
-        flex-direction: column;
-    }
-    .abouthotel {
-        margin-right: 6%;
-        margin-left: auto;
-        margin-top: 2%;
-        width: 60%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .abouthotel h2{
-        font-size: 16px;
-        font-weight: 700;
-        color: #2b2f33;
-        padding: 10px;
-        text-align: right;
-    }
-    .abouthotel p{
-        text-align: right;
-        padding: 10px;
-        background-color: #fff;
-        border-radius: 5px;
-        margin: 10px;
-        display: flex;
-        flex-direction: row-reverse;
-    }
-   
+.percent {
+  color: #1e7b33;
+  background-color: #eafaee;
+  border-radius: 0.625rem;
+  padding: 0 0.225rem;
+  font-weight: 400;
+  line-height: 1.67;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+}
+.pr {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.125rem;
+  color: #0077db;
+}
+.pr span {
+  font-size: 10.8px;
+  color: #959ea6;
+  margin-right: 5px;
+}
+.pri {
+  position: relative;
+}
+.pri::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 1px solid #959ea6;
+  border-color: inherit;
+  transform: rotate(-10deg);
+}
+.ReservationButton {
+  padding: 0.25rem 3rem;
+  line-height: 30px;
+  border-radius: 8px;
+  background-color: #0077db;
+  color: white;
+  font-size: 0.875rem;
+  border: none;
+  text-align: center;
+  margin: auto;
+  display: table;
+  font-family: "IranYekan";
+}
+.priceforonenight {
+  font-size: 12px;
+  font-weight: 200;
+  color: #6c7680;
+}
+.importantplacesaround {
+  margin-right: 6%;
+  margin-left: auto;
+  margin-top: 2%;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: #1e7b33; */
+}
+.importantplacesaround::before{
+  content: "";
+    display: inline-block;
+    height: 250px;
+    margin: -180px 0 0;
+}
+.importantplacesaround h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2b2f33;
+  padding: 10px;
+  text-align: right;
+}
+.mapandzhorasik {
+  display: flex;
+  flex-direction: row-reverse;
+  /* justify-content: space-between; */
+  gap: 10px;
+}
+.zhorasik {
+  height: 20%;
+  width: 40%;
+  border-radius: 5px;
+  /* text-emphasis-color: #fff; */
+  background-color: #ffffff;
+}
+.zhorasik h3 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px;
+}
+.zhorasik p {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 200;
+  padding: 10px;
+}
+.zhorasikdetail {
+  display: flex;
+  flex-direction: column;
+}
+.parkdetail {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.metrtime {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.mmd {
+  display: flex;
+}
+.showmap {
+  width: 60%;
+  /* background-color: #17a2b8; */
+}
+.showmap img {
+  width: 75%;
+  height: 300px;
+  border-radius: 5px;
+}
+.rules {
+  margin-right: 6%;
+  margin-left: auto;
+  margin-top: 2%;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.rules::before{
+  content: "";
+    display: inline-block;
+    height: 250px;
+    margin: -180px 0 0;
+}
+.rules h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2b2f33;
+  padding: 10px;
+  text-align: right;
+}
+.hotel-rules {
+  text-align: right;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  /* width: 20%; */
+}
+.enterandexit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  border-left: 1px solid #ccc;
+}
+.enter {
+  display: flex;
+  flex-direction: column;
+}
+.exit {
+  display: flex;
+  flex-direction: column;
+}
+.costandpoints {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 3%;
+}
+.Essentialtips {
+  display: flex;
+  flex-direction: column;
+}
+.Additionalcost {
+  display: flex;
+  flex-direction: column;
+}
+.abouthotel {
+  margin-right: 6%;
+  margin-left: auto;
+  margin-top: 2%;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.abouthotel h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2b2f33;
+  padding: 10px;
+  text-align: right;
+}
+.abouthotel p {
+  text-align: right;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+}
 
 /* .g{
     position: fixed;
@@ -544,10 +542,11 @@ li{
     width: 100%;
 } */
 
-aside{
-    width: fit-content;
-    padding: 32px;
-    position: absolute;
+aside {
+  width: fit-content;
+  padding: 32px;
+  position: absolute;
+  padding-top: 90px;
 }
 /* aside button{
     font-family: 'IranYekan';
@@ -556,194 +555,388 @@ aside{
     font-weight: 500;
 } */
 
-.a{
-    background: white;
-    padding: 28px 36px;
-    margin: 7px 1px;
-    border-radius: 8px;
+.a {
+  background: white;
+  padding: 28px 36px;
+  margin: 7px 1px;
+  border-radius: 8px;
 }
-.inp1,.inp2{
+.inp1,
+.inp2 {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  background: #e0dede;
+  padding: 5px 32px;
+  direction: rtl;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+aside{
+  /* top: 0; */
+  /* position: fixed;
+  left: 0; */
+  position: sticky;
+  top: 0;
+}
+/* .content-nav{
+  position: sticky;
+  top: 0;
+  
+} */
+.content-nav .share{
+  font-size: 12.8px;
+  cursor: pointer;
+  color: #0077db;
+}
+.content-nav button {
+  font-family: "IranYekan";
+  padding: 0.25rem 3rem;
+  line-height: 30px;
+  border-radius: 8px;
+  background-color: #0077db;
+  color: white;
+  font-size: 0.875rem;
+  border: none;
+  text-align: center;
+  margin: auto;
+  display: table;
+}
+.watchrooms{
+  color: white;
+}
+button:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+.content-nav button:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+footer {
+  border-top: solid 1px var(--grays-150);
+  background-color: #fff;
+  color: #2b2f33;
+}
+.containerr{
+  display: flex;
+  flex-direction: column;
+}
+
+footer .alibaba-logo {
+  display: block;
+  height: 30px;
+  float: left;
+}
+
+footer .fast-link {
+  margin: 0 0 0 50px;
+}
+
+footer .fast-link h4{
+  margin: 0 0 20px 0;
+}
+
+footer .fast-link li{
+  line-height: 30px;
+}
+footer .summary-container {
+  flex-grow: 10;
+}
+footer .logo-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-left: 2%;
+  height: 30px;
+  margin-bottom: 20px;
+}
+footer .logo-container p{
+  font-size:10rem;
+  font-weight: 700;
+}
+footer .first-row-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 1rem;
+}
+footer .summary-container p{
+  text-align: left;
+  font-size: 0.875rem;
+  margin-bottom: 15px;
+}
+
+footer .certificate-logo-container img{
+  width: 69px;
+  height: 69px;
+  padding: 1px;
+  border: solid 1px rgba(0, 0, 0, .12);
+  border-radius: 0.5rem;
+}
+footer .certificate-logo-container {
+  display: flex;
+  justify-content: end;
+  gap: 5px;
+  margin: 40px 0;
+}
+
+footer .other-links {
+  line-height: 18.6px;
+  color: #6C7680;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-top: 20px;
+}
+
+footer .other-links .dot {
+  background-color: #6C7680;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  border: none;
+}
+@media (max-width: 1000px) {
+  .leftimgs div {
+    width: 49%;
+  }
+  .main{
+    margin-top: 88px;
+  }
+}
+@media (max-width:1130px)  {
+  .content-nav {
+    display: none;
+  }
+  .posibility{
+    margin-top: 20px;
+  }
+  .main{
+    margin-top: 88px;
+  }
+}
+@media (max-width: 768px) {
+  
+  .ReservationButton {
+    width: 100%;
+  }
+  .main{
+    margin-top: 88px;
+  }
+  .importantplacesaround {
+    margin-right: 6%;
+    margin-left: auto;
+    margin-top: 2%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+  }
+  .showmap img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+  }
+  .mapandzhorasik {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .zhorasik {
+    width: 100%;
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-top: 2%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .showmap {
+    width: 100%;
+  }
+
+  .rooms {
+    margin-right: 6%;
+    margin-left: auto;
+    margin-top: 2%;
+    width: 100%;
+    padding: 0px;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .roomdetailandprice {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 10px;
+    flex-direction: column;
+  }
+  .showprice {
+    width: 98%;
+    border-top: 1px solid #d6d6d6;
+    border-right: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     align-items: stretch;
-    justify-content: space-evenly;
-    background: #e0dede;
-    padding: 5px 32px;
-    direction: rtl;
-    border-radius: 6px;
-    margin-bottom: 10px;
-}
-
-.content-nav button{
-    font-family: 'IranYekan';
-    padding: 0.25rem 3rem;
-    line-height: 30px;
-    border-radius: 8px;
-    background-color: #0077DB;
-    color: white;
-    font-size: 0.875rem;
-    border: none;
+  }
+  .pricediscount {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .priceforonenight {
+    display: flex;
+    justify-content: center;
+  }
+  .numberpricerule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 17px;
+    align-items: stretch;
+    margin-top: 18px;
+  }
+  .address,
+  .rate,
+  .starsaddress {
+    display: none;
+  }
+  .hotelnamestars .hotelname {
+    font-size: 33px;
+    line-height: 48px;
+    color: rgb(109, 96, 96);
+    text-shadow: 4px 2px 14px black;
+    width: 100%;
     text-align: center;
-    margin: auto;
-    display: table
-}
-button:hover{
-    background-color: #0056b3;
-    cursor: pointer;
-
-}
-.content-nav button:hover{
-    background-color: #0056b3;
-    cursor: pointer;
-}
-
-@media  (max-width: 768px) {
+  }
+  .posibility {
+    /* margin-right: 6%; */
+    /* margin-left: auto; */
+    /* margin-top: 21%; */
+    width: 100%;
+    height: 100%;
+  }
+  .rules {
+    margin-right: 6%;
+    margin-left: auto;
+    margin-top: 2%;
+    width: 103%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
-    .content-nav{
-        display: flex;
-        flex-direction: column;
-        align-items: center;    
-        justify-content: center;
-    }
-    .ReservationButton{
-        width: 100%;
-    }
-    .importantplacesaround{
-        margin-right: 6%;
-        margin-left: auto;
-        margin-top: 2%;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .showmap img{
-        width: 100%;
-        height: 300px;
-        border-radius: 5px;
-    }
-    .mapandzhorasik{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .zhorasik{
-        width: 100%;
-        margin-right: 0%;
-        margin-left: 0%;
-        margin-top: 2%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .showmap{
-        width: 100%;
-    }
-
-    .rooms{
-        margin-right: 6%;
-        margin-left: auto;
-        margin-top: 2%;
-        width: 100%;
-        padding: 0px;
-        /* height: 100%; */
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .roomdetailandprice{
-        display: flex;
-        justify-content: space-between;
-        padding: 10px;
-        background-color: #fff;
-        border-radius: 5px;
-        margin: 10px;
-        flex-direction: column;
-    }
-    .showprice {
-        width: 98%;
-        border-top: 1px solid #d6d6d6;
-        border-right: none;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .pricediscount{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: stretch;
-    }
-    .priceforonenight{
-        display: flex;
-        justify-content: center;
-    }
-    .numberpricerule {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 17px;
-        align-items: stretch;
-        margin-top: 18px;
-    }
-    .address,.rate,.starsaddress{
-        display: none;
-    }
-    .hotelnamestars .hotelname{
-      
-            font-size: 33px;
-            line-height: 48px;
-            color: rgb(109, 96, 96);
-            text-shadow: 4px 2px 14px black;
-            width: 100%;
-            text-align: center;
-        
-    }
-    .posibility {
-        margin-right: 6%;
-        margin-left: auto;
-        margin-top: 21%;
-        width: 100%;
-        height: 100%;
-    }    
-    .rules {
-        margin-right: 6%;
-        margin-left: auto;
-        margin-top: 2%;
-        width: 103%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .enterandexit {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        width: 81%;
-        border-left: 1px solid #ccc;
-    }
-    .showdetail {
-        text-align: right;
-        width: 100%;
-    }
-    .abouthotel {
-        margin-right: 6%;
-        margin-left: auto;
-        margin-top: 2%;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    aside{
-        position: relative;
-        font-family: 'IranYekan';
-    }
- 
+  }
+  .enterandexit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 81%;
+    border-left: 1px solid #ccc;
+  }
+  .showdetail {
+    text-align: right;
+    width: 100%;
+  }
+  .abouthotel {
+    margin-right: 6%;
+    margin-left: auto;
+    margin-top: 2%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  aside {
+    position: relative;
+    font-family: "IranYekan";
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main {
+    margin-top: 88px;
+  }
+  .leftimgs::-webkit-scrollbar {
+    display: none;
+  }
+  .leftimgs div {
+    height: 100%;
+  }
+  .rightimage img {
+    border-radius: 10px;
+  }
+  .main {
+    align-items: center;
+  }
+  .imageGalley {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: fit-content;
+    flex-flow: column;
+    gap: 8px;
+  }
+  .leftimgs {
+    width: 100%;
+    display: block !important;
+    height: 32vw;
+    overflow-x: auto;
+    direction: rtl;
+    border-radius: 8px;
+    white-space: nowrap;
+  }
+  .leftimgs img {
+    height: 100%;
+  }
+  .showposibility {
+    flex-direction: column;
+    height: 200px;
+    overflow-y: auto;
+  }
+  .rightimage {
+    width: 100%;
+  }
+  .bodyImg {
+    width: 70% !important;
+    display: inline-block !important;
+  }
+  .bodyImg img {
+    width: 100%;
+  }
+  nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 0;
+  }
+  .showposibility .leftposition {
+    align-items: flex-end;
+    margin-right: 0;
+  }
+  .showposibility .middleposition {
+    align-items: flex-end;
+    text-align: right;
+    margin: 0;
+  }
+  .fas {
+    margin-left: 5px;
+  }
 }
