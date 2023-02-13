@@ -630,21 +630,21 @@ footer .alibaba-logo {
   float: left;
 }
 
-footer .fast-link {
+footer .linkfooter {
   margin: 0 0 0 50px;
 }
 
-footer .fast-link h4{
+footer .linkfooter h4{
   margin: 0 0 20px 0;
 }
 
-footer .fast-link li{
+footer .linkfooter li{
   line-height: 30px;
 }
-footer .summary-container {
+footer .summ-cont {
   flex-grow: 10;
 }
-footer .logo-container {
+footer .footerlogo {
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -652,30 +652,30 @@ footer .logo-container {
   height: 30px;
   margin-bottom: 20px;
 }
-footer .logo-container p{
+footer .footerlogo p{
   font-size:10rem;
   font-weight: 700;
 }
-footer .first-row-container {
+footer .firstrowr {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   gap: 1rem;
 }
-footer .summary-container p{
+footer .summ-cont p{
   text-align: left;
   font-size: 0.875rem;
   margin-bottom: 15px;
 }
 
-footer .certificate-logo-container img{
+footer .certificate-footerlogo img{
   width: 69px;
   height: 69px;
   padding: 1px;
   border: solid 1px rgba(0, 0, 0, .12);
   border-radius: 0.5rem;
 }
-footer .certificate-logo-container {
+footer .certificate-footerlogo {
   display: flex;
   justify-content: end;
   gap: 5px;
@@ -885,6 +885,7 @@ footer .other-links .dot {
     align-items: center;
   }
   .imageGalley {
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
     width: 90%;
